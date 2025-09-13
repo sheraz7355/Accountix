@@ -1,0 +1,46 @@
+.dashboard-data
+{
+    display: flex;
+    flex-direction: column;
+}
+.box4-container{
+    display: flex;
+    gap: 1.4em;
+    margin-bottom: 1em;
+}
+.d1-box{
+    border: 1px solid rgba(119, 119, 119, 0.377);
+    border-radius: 10px;
+    min-width: 16em;
+    padding: 1em 1.2em 0.8em 1.2em;
+}
+.d1-box .head{
+    display: flex;
+    justify-content: space-between;
+}
+.d1-box .detail{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.d1-box p{
+    font-size: 0.75em;
+    color:rgb(59, 59, 59);
+}
+
+/* /////////////////////////////////////////////////////// */
+.graphboxes{
+    display: flex;
+    gap: 1.4em;
+    margin-bottom: 1em;
+}
+.d2-box{
+    border: 1px solid rgba(119, 119, 119, 0.377);
+    border-radius: 10px;
+    min-width: 33.4em;
+    padding: 1em 1.2em 0.8em 1.2em;
+}
+.d2-box .head{
+    display: flex;
+    justify-content: space-between;
+}

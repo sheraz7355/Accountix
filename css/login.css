@@ -1,0 +1,180 @@
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #E5E5E5;
+  align-items: center;
+  justify-content: center;
+  /* gradient background (black -> gray -> subtle white shading) */
+  /* beautiful web font */
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*logo image in login page*/
+.logo-section {
+  margin-right: 100px;
+}
+
+.logo-section img {
+  width: 500px;
+  height: 410px;
+}
+
+.login-section {
+  display: flex;
+  background: linear-gradient(180deg, rgba(15, 163, 94, 0.918) 0%, #0d447a 100%);
+  backdrop-filter: blur(10px);
+  height: 100vh;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.logointro {
+  justify-content: center;
+  display: flex;
+  padding: 20px 0px 10px 0px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.logointro img {
+  height: 50px;
+  filter: brightness(0) invert(1);
+  width: 60px;
+}
+
+.logointro p {
+  margin-top: 8px;
+  font-size: 2.3em;
+  color: rgb(255, 255, 255);
+}
+
+.login-card {
+  border-radius: 10px;
+  padding: 28px;
+  max-height: 400px;
+  background-color: #E5E5E5;
+  /* base color from tutorial */
+  width: min(420px, 85vw);
+  aspect-ratio: 1 / 1;
+  /* keeps it square */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+
+  /* Inner shadow (2 layers) */
+  box-shadow:
+    inset -30px -30px 50px rgba(255, 255, 255, 0.7),
+    /* top-left soft light */
+    inset 5px 5px 25px rgba(43, 43, 43, 1);
+  /* bottom-right soft dark */
+}
+
+/* center the header and style it */
+.login-section .brand {
+  text-align: center;
+  margin: 0 0 12px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  color: #2e2e2e;
+}
+
+/* slightly nicer labels / inputs (inherit font) */
+.login-section label {
+  font-weight: 500;
+  color: #818181;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.forget {
+  color: #4b4b4b;
+  font-size: 0.9em;
+  padding-top: 5px;
+  display: flex;
+  gap: 10px;
+}
+
+.forget label {
+  padding-top: 8px;
+  color: inherit
+}
+
+.page-buttons {
+  padding: 10px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  margin: 10px;
+  font-size: 1.1em;
+  padding: 5px;
+  height: 45px;
+  width: 100px;
+  color: rgb(87, 87, 87);
+  border: solid 1px rgb(133, 133, 133);
+  border-radius: 5px;
+}
+
+#login {
+  background: linear-gradient(180deg, rgba(9, 66, 53, 1) 0%, rgba(9, 66, 53, 1) 100%);
+  border: solid 1px rgb(7, 43, 34);
+  color: aliceblue;
+  transition: background 0.2s ease-in-out;
+  /* specify property */
+}
+
+#login:hover {
+  background: linear-gradient(180deg, rgba(31, 67, 71, 0.9) 0%, rgba(6, 65, 55, 0.9) 80%);
+  border: solid 1px rgb(7, 43, 34);
+}
+
+#signup {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  /* flat white */
+  color: rgb(87, 87, 87);
+  border: solid 1px rgb(133, 133, 133);
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+#signup:hover {
+  border: solid 1px rgb(7, 43, 34);
+  color: aliceblue;
+  background: linear-gradient(180deg, rgba(31, 67, 71, 0.9) 0%, rgba(6, 65, 55, 0.9) 80%);
+}
+
+
+#login:hover {
+  background: linear-gradient(180deg, rgba(31, 67, 71, 0.9) 0%, rgba(6, 65, 55, 0.9) 80%);
+  border: solid 1px rgb(7, 43, 34);
+}
+
+.signmessage {
+  display: flex;
+  align-items: center;
+  /* vertically centers text & button */
+  gap: 8px;
+  /* space between text and button */
+  font-size: 0.9em;
+  color: #818181;
+}
+
+.login-section .form-control {
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+/* responsive tweak: keep proportions on small screens */
+@media (max-width:420px) {
+  .login-section {
+    padding: 20px;
+    width: 92vw;
+    aspect-ratio: 1 / 1;
+  }
+}
