@@ -13,13 +13,13 @@
 
 <body>
   <div class="logo-section">
-    <img src="./assets/Accountix_maxupscaled_backgroundremoved.png" />
+    <img src="/assets/Accountix_maxupscaled_backgroundremoved.png" />
   </div>
 
   <!-- //////////////////////////////////////////////Login section here! -->
   <div class="login-section">
     <div class="logointro">
-      <img src="./pictures/cleaned_logo.svg " />
+      <img src="./assets/cleaned_logo.svg " />
       <p>ccountix</p>
     </div>
     <div class="login-card">
