@@ -45,12 +45,7 @@
     justify-content: space-between;
 }
 
-/* Inventory view header and Add Products button */
-.inventory-header{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
+
 
 .btn-add-product{
     background: linear-gradient(180deg, #0f9b5e 0%, #0b5f8d 100%);

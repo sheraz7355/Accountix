@@ -1,0 +1,6 @@
+/* Inventory view header and Add Products button */
+.inventory-header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
