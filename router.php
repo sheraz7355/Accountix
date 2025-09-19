@@ -14,9 +14,10 @@ $routes = [
     '/Setting' => 'controller/Setting.php',
 ];
 
-routeToController($uri, $routes);
+// The $db variable is passed from index.php
+routeToController($uri, $routes, $db);
 
-function routeToController($uri, $routes){
+function routeToController($uri, $routes, $db){
     if(array_key_exists($uri, $routes)){
         return require $routes[$uri];
     }else{

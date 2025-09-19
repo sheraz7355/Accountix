@@ -5,17 +5,17 @@ class Database {
 
     public $connection;
    
-    public function __construct($config,$username='root',$password=''){
-       
-        $dbl = 'mysql:'.http_build_query($config,'',';');
-        $this->connection = new PDO($dbl,$username,$password,[
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+    public function __construct($config, $username = 'apple', $password = ''){
+        $dsn = 'pgsql:' . http_build_query($config, '', ';');
+        $this->connection = new PDO($dsn, $username, $password, [
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
         ]);
     }
 
-    public function query($query){
+    public function query($query,$params=[]){
         $statement = $this->connection->prepare($query);
-        $statement->execute();
+        $statement->execute($params);
         return $statement;
     }
 }
